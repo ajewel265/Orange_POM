@@ -8,7 +8,7 @@
 
 import { expect, test } from "@playwright/test";
 import { LoginPage } from "../page/LoginPage";
-import { HomePage } from "../page/HomePage";
+import { HomePageQA2 } from "../page/HomePage";
 
 test("Banking application", async ({ page }) => {
   await page.goto("https://bakkappan.github.io/Testers-Talk-Practice-Site/");
@@ -18,7 +18,7 @@ test("Banking application", async ({ page }) => {
   await loginPage.dologin("TestersTalk", "TestersTalk"); 
   // this statement will login to the application 
 
-  const homePage = new HomePage(page);
+  const homePage = new HomePageQA2(page);
   await  homePage.VerifyWelcomeMsg(); // this statement will verify the application
   await page.pause();
 });

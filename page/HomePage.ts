@@ -13,7 +13,7 @@
 import { expect, Locator, Page } from "@playwright/test";
 
 
-export class HomePage {
+export class HomePageQA2 {
 
     private WelcomeMsg: Locator
 
