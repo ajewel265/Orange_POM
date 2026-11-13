@@ -15,6 +15,8 @@ export class BasePage {
     }
     async getTitle() {
         return await this.page.title();
+       // newly added for git test. 
+        await this.page.pause();
     }
 
 }

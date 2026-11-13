@@ -12,7 +12,7 @@
 
 import { expect, Locator, Page } from "@playwright/test";
 
-
+// 1. Create a class // Testing Git barnch from QA1 # windows
 export class HomePageQA2 {
 
     private WelcomeMsg: Locator
